@@ -1,0 +1,25 @@
+id: landray-oa-detect-2
+
+info:
+  name: "蓝凌 OA -22222222222"
+  author: ztz
+  severity: info
+  tags: tech,landary
+  metadata:
+    app:
+      vendor: 蓝凌
+      name: 蓝凌oa
+
+requests:
+  - method: GET
+    path:
+      - '{{BaseURL}}'
+
+    redirects: true
+    
+    matchers:
+      - type: word
+        words:
+          - "lui_login_message_td"
+          - "form_bottom"
+        condition: and

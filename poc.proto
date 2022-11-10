@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "server/";
+
+package rpcServer;
+
+service RunPocScanService{
+  rpc poc(PocScanReq) returns (PocScanResult){}
+}
+
+message PocScanReq{
+  string urls = 1;
+}
+message PocScanResult{
+  string jsonResults = 1;
+}
