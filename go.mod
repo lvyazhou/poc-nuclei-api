@@ -8,7 +8,7 @@ require (
 	github.com/projectdiscovery/gologger v1.1.4
 	github.com/projectdiscovery/nuclei/v2 v2.7.9
 	github.com/stretchr/testify v1.8.1
-	google.golang.org/grpc v1.29.1
+	google.golang.org/grpc v1.32.0
 	google.golang.org/protobuf v1.28.1
 )
 

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package pb;
+
+option go_package = "./pb";
+
+service RunPocService{
+  rpc poc(PocReq) returns (PocResult){}
+}
+
+message PocReq{
+  string urls = 1;
+}
+message PocResult{
+  string jsonResults = 1;
+}
