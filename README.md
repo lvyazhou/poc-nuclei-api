@@ -1,5 +1,6 @@
 # poc-osint-api
-
+漏扫工具基于nuclei
+支持http server、rpc server调用。
 
 
 ## Getting started
